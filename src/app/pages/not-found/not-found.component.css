@@ -1,0 +1,34 @@
+.error-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.error-container {
+  margin:calc(15%) auto;
+}
+
+.error-title {
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.error-subtitle {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.error-paragraph {
+  font-size: 25px;
+}
+
+.go-home {
+  background-color: #FF6752;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+}

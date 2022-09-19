@@ -1,0 +1,683 @@
+.loader{
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 3;
+
+  animation: loader 2s linear forwards;
+}
+
+@keyframes loader {
+  0%{
+      opacity: 1;
+      visibility: visible;
+  }
+
+  95%{
+      opacity: 1;
+      visibility: visible;
+  }
+
+  100%{
+      opacity: 0;
+      visibility: hidden;
+  }
+}
+
+.loading-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.loader div{
+  background: #FF6752;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+
+  transform: scale(0);
+
+  animation: scaling 2s ease-in-out infinite;
+}
+
+.loader div:nth-child(1){
+  animation-delay: 0.2s;
+}
+
+.loader div:nth-child(2){
+  animation-delay: 0.4s;
+}
+
+.loader div:nth-child(3){
+  animation-delay: 0.6s;
+}
+
+@keyframes scaling {
+  0%, 100%{
+      transform: scale(0.2);
+  }
+  40%{
+      transform: scale(1);
+  }
+  50%{
+      transform: scale(1);
+  }
+}
+
+.main-page{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.home-title {
+  font-weight: bold;
+  font-size: 60px;
+  text-align: start;
+  margin-left: 140px;
+}
+
+.home-paragraph{
+  font-size: 20px;
+  text-align: start;
+  margin-left: 140px;
+  font-weight: 200;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 140px;
+  gap: 20px;
+}
+
+.service-paragraph {
+  margin-top: auto;
+}
+
+.w1 {
+  background-image: url(../../../assets/images/wave-haikei2.svg);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 200;
+  display: flex;
+  flex-direction: row;
+}
+
+.primary-section {
+  width: 60%;
+  text-align: center;
+  margin: 200px auto;
+  color: #ffff;
+}
+
+.secondary-section{
+  width: 40%;
+}
+
+.icon-background {
+  background-color: yellow;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  margin-top: 300px;
+  position: absolute;
+}
+
+.icon-golden {
+  position: relative;
+  width: 80%;
+  bottom: 90px;
+  left: 50px;
+  clip-path: circle(55.7% at 50% 40%);
+}
+
+.service-button {
+  color: #F8F8F8;
+  border: none;
+  background-color: #4487ff;
+  box-shadow: 0px 3px 6px #2C1DAD29;
+  padding: 20px;
+  border-radius: 38px;
+}
+
+.service-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.w2 {
+  background-image: url(../../../assets/images/wave-haikei3.svg);
+  width: 100%;
+  height: 80%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top:-500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.our-services{
+  width: 40%;
+  position: relative;
+  top: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.our-services-title{
+  color: #FF6752;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.our-services-text {
+  color: #494848;
+}
+
+.our-services-location {
+  color: #FF6752;
+  font-weight: bold;
+  font-size: 24px;
+  z-index: 3;
+}
+
+.input-container {
+  width: 300px;
+  position: relative;
+}
+
+.our-services-input {
+  width: 293px;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+  padding: 20px;
+  outline: none;
+  z-index: 3;
+  position: absolute;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.our-services-button {
+  border: none;
+  background-color:#FF6752;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  right: -245px;
+  top: 2px;
+  color: #ffff;
+  z-index: 3;
+  position: relative;
+}
+
+.cards {
+  width: 40%;
+  position: relative;
+  top: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 25px;
+  justify-content: center;
+  margin-top: -100px;
+  position: absolute;
+  z-index: 1;
+}
+
+.card1, .card2, .card3, .card4  {
+  background-color: #ffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.card1 img, .card2 img, .card3 img, .card4 img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: auto auto;
+}
+
+.card1 p, .card2 p, .card3 p, .card4 p {
+  text-align: center;
+  color: #707070;
+  margin-top: 8px
+}
+
+.comments-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.comments-title {
+  position: relative;
+  text-align: center;
+  color:#FF6752;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 85px;
+}
+
+.w3 {
+  background-image: url(../../../assets/images/wave-haikei4.svg);
+  width: 100%;
+  height: 80%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: inherit;
+  transform: scaleX(-1);
+}
+
+.comments-cards {
+  transform: rotate(360deg);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.comment-card1 {
+  background-image: url(../../../assets//images/stacked-waves-haikei2.svg);
+  position: relative;
+  left: 20px;
+  z-index: 1;
+  transform: scale(0.8);
+}
+
+.comment-card3 {
+  background-image: url(../../../assets//images/stacked-waves-haikei2.svg);
+  right: 20px;
+  z-index: 1;
+  transform: scale(0.8);
+}
+
+.comment-card2 {
+  background-image: url(../../../assets//images/stacked-waves-haikei.svg);
+  position: absolute;
+  z-index: 3;
+}
+
+.comment-card1, .comment-card2, .comment-card3 {
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px #00000029;
+  margin-bottom: 50px;
+}
+
+.comment-card1 img, .comment-card2 img, .comment-card3 img {
+  margin: 30px auto 30px auto;
+}
+
+.comment-card1 h3, .comment-card2 h3, .comment-card3 h3 {
+  margin-bottom: 20px;
+}
+
+.comments-button {
+  border: none;
+  background-color:#FF6752;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  color: #ffff;
+  margin-top: 120px;
+  z-index: 3;
+}
+
+.how-it-works-section{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.w4 {
+  background-image: url(../../../assets/images/blob-haikeicircle.svg);
+  width: 100%;
+  height: 150%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 1200px;
+  left: 900px;
+}
+
+.how-it-works-principal-container {
+  display: flex;
+}
+
+.how-it-works-icons {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-top: 50px;
+}
+
+.icons-container-dashed {
+  border: #FF6752 10px dashed;
+  border-radius: 60%;
+  width: 800px;
+  height: 600px;
+  clip-path: inset(0 0 0 48%);
+  margin-left: -500px;
+  position: absolute;
+}
+
+.icons-container img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px #00000029;
+  background-color: #F8F8F8;
+  padding: 30px;
+}
+.icons-container p {
+  text-align: center;
+  color: #707070;
+  position: relative;
+  top: -30px;
+}
+
+.how-it-works-icons-card1{
+  position: relative;
+  left: -200px;
+  top: -80px;
+}
+
+.how-it-works-icons-card2{
+  position: relative;
+  left: 200px;
+  top: -10px;
+}
+
+.how-it-works-icons-card3{
+  position: relative;
+  left: -200px;
+  top: 20px;
+}
+
+.how-it-works-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  z-index: 3;
+  margin-top: 50px;
+}
+
+
+.how-it-works-title{
+  color: #FF6752;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.how-it-works-text {
+  color: #494848;
+}
+
+.how-it-works-location {
+  color: #FF6752;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.how-it-works-input-container {
+  width: 300px;
+  position: relative;
+}
+
+.how-it-works-input {
+  width: 293px;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+  padding: 20px;
+  outline: none;
+  position: absolute;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.how-it-works-button {
+  border: none;
+  background-color:#FF6752;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  right: -245px;
+  top: 2px;
+  color: #ffff;
+  position: relative;
+}
+
+.w5 {
+  background-image: url(../../../assets/images/blob-haikeicircle2.svg);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -100px;
+  left: -1000px;
+}
+
+.what-are-you-waiting-section{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.what-are-you-waiting-container {
+  position: relative;
+  top: 2700px;
+  width: 1364px;
+  height: 500px;
+  background-color: #4487FF;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.what-are-you-waiting-icon-background{
+  background-color: yellow;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 30px;
+  position: absolute;
+}
+
+.what-are-you-waiting-dog {
+  position: relative;
+  width: 80%;
+  bottom: 2px;
+  left: 40px;
+  clip-path: circle(55.7% at 50% 40%);
+}
+
+.what-are-you-waiting-text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  margin-left: 500px;
+}
+
+.what-are-you-waiting-title {
+  color: yellow;
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.what-are-you-waiting-paragraph{
+  font-size: 32px;
+  color: #F8F8F8;
+}
+
+.what-are-you-waiting-button{
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 40px;
+  width: 162px;
+  height: 75px;
+  border: none;
+  color: #FE6845;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-section {
+  position: absolute;
+  top: 4400px;
+  background-color: #FE6845;
+  width: 100%;
+  height: 500px;
+  border-radius: 30% 30% 0 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 80px;
+}
+
+.about-container {
+  width: 30%;
+}
+
+.about-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFE530;
+}
+
+.about-title li {
+  font-weight: 500;
+  list-style: none;
+  margin: 15px 0 10px 0;
+}
+
+.about-title li a {
+  text-decoration:none;
+  color: #FFFFFF;
+}
+
+.resources-container{
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  margin-left: -50px;
+}
+
+.resources-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFE530;
+}
+
+.resources-title li {
+  font-weight: 500;
+  list-style: none;
+  margin: 15px 0 10px 0;
+}
+
+.resources-title li a {
+  text-decoration:none;
+  color: #FFFFFF;
+}
+
+.resources-title-2{
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+.resources-title-2 li{
+  font-weight: 500;
+  list-style: none;
+  margin: 15px 0 10px 0;
+  font-size: 24px;
+}
+
+.resources-title-2 li a{
+  text-decoration:none;
+  color: #FFFFFF;
+}
+
+.subscribe-container{
+  width: 30%;
+  margin-left: 100px;
+}
+
+.subscribe-title {
+  font-size: 24px;
+  color: #FFE530;
+  font-weight: bold;
+}
+
+.subscribe-paragraph {
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-top: 40px;
+}
+
+.subscribe-button-container {
+  width: 300px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.subscribe-input {
+  width: 293px;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+  padding: 20px;
+  outline: none;
+  position: absolute;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.subscribe-button {
+  border: none;
+  background-color:#FF6752;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  right: -245px;
+  top: 2px;
+  color: #ffff;
+  position: relative;
+}

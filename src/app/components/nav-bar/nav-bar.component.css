@@ -1,0 +1,41 @@
+nav {
+  background-color: #FF6752;
+  height: 100px;
+}
+
+.icon{
+  background-color: #FFFF;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 140px;
+  margin-top: 20px;
+}
+
+img{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 10px 0 10px 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 33px;
+  list-style: none;
+  margin-right: 132px;
+}
+
+.links li {
+  margin-top: 40px;
+  font-family: normal normal normal 24px/33px Open Sans;
+}
+
+a{
+  text-decoration:none;
+  color: #FFFFFF;
+  font-size: 20px;
+}

@@ -1,0 +1,22 @@
+<main class="main-section">
+  <section class="image-section">
+      <div class="icon-background">
+        <img class="icon" src="../../../assets/icons/pet (1).svg" alt="icono perro y gato">
+    </div>
+  </section>
+  <section class="form-section">
+    <div class="title-form">
+      <p class="line"></p><h2 class="title">BIENVENIDO</h2>
+    </div>
+    <form (ngSubmit)="logIn(formTemplate)" #formTemplate="ngForm">
+      <input name="email" #email="ngModel" type="email" ngModel required placeholder="   EMAIL" >
+      <p class="errors" *ngIf="email.errors?.['required'] && email.touched"> este campo es requerido</p>
+      <input name="password" #password="ngModel" type="password" ngModel required placeholder="   CONTRASEÑA">
+      <p class="errors" *ngIf="password.errors?.['required'] && password.touched"> este campo es requerido</p>
+      <p class="subtitle">¿Olvidaste tu contraseña?</p>
+      <button type="submit" class="login-button" [disabled]="formTemplate.invalid" >INICIAR SESIÓN</button>
+      <p class="subtitle2">AUN NO TENGO CUENTA <a href="">REGISTRARSE</a></p>
+    </form>
+
+  </section>
+</main>
